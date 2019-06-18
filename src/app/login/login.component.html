@@ -1,0 +1,10 @@
+<div class="login-container">
+  <mat-form-field class="input-login">
+    <input matInput placeholder="Usuario" [(ngModel)]="username" >
+  </mat-form-field>
+  <mat-form-field class="input-login">
+    <input matInput type="password" placeholder="Password" [(ngModel)]="password">
+  </mat-form-field>
+  <br>
+  <button mat-raised-button color="primary" (click)="login()">Ingresar</button>
+</div>

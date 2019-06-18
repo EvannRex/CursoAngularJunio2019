@@ -1,0 +1,8 @@
+
+.login-container{
+  margin: auto;
+  width: 320px;
+}
+.login-container mat-form-field{
+  height: 100%;
+}
