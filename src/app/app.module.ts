@@ -10,6 +10,9 @@ import {MatButtonModule} from '@angular/material/button';
 import {FormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {HttpClientModule} from '@angular/common/http'
+import {ReactiveFormsModule} from '@angular/forms';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 
 @NgModule({
@@ -25,7 +28,10 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     MatButtonModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

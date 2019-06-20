@@ -1,10 +1,11 @@
-<div class="login-container">
+<div class="login-container" [formGroup]="formLogin">
+  <h1>Login</h1>
   <mat-form-field class="input-login">
-    <input matInput placeholder="Usuario" [(ngModel)]="username" >
+    <input matInput placeholder="Usuario" formControlName="username" >
   </mat-form-field>
   <mat-form-field class="input-login">
-    <input matInput type="password" placeholder="Password" [(ngModel)]="password">
+    <input matInput type="password" placeholder="Password" formControlName="password" >
   </mat-form-field>
   <br>
-  <button mat-raised-button color="primary" (click)="login()">Ingresar</button>
+  <button mat-raised-button color="primary" (click)="login()" [disabled]="formLogin.invalid" *ngIf="loading">Ingresar</button>
 </div>
